@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Line Break and Line Number Remover</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Line Break and Line Number Remover</h1>
+<div class="button-container">
+  <button onclick="removeLineNumbers()">Remove Line Numbers</button>
+  <button onclick="removeLineBreaks()">Remove Line Breaks</button>
+  <button onclick="undo()">Undo</button>
+</div>
+<textarea id="textArea" rows="20" cols="100" placeholder="Paste your text with line breaks and line numbers here..."
+          oninput="adjustHeight()"></textarea>
+<script src="script.js"></script>
+</body>
+</html>
