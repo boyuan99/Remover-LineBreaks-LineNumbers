@@ -22,6 +22,14 @@ function removeLineNumbers() {
     adjustHeight();
 }
 
+function removeDoubleSpaces() {
+    const textArea = document.getElementById("textArea");
+    addToHistory(textArea.value);
+    const stringWithSingleSpaces = textArea.value.replace(/  +/g, ' ');
+    textArea.value = stringWithSingleSpaces;
+    adjustHeight();
+}
+
 function addToHistory(text) {
     if (history.length === 10) {
         history.shift();
